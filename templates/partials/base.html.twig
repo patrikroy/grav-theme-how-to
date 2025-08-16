@@ -56,33 +56,16 @@
     <nav class="navbar navbar-expand-md bg-white fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://grav.howto.ovh"><span class="navbar-brand-hl">GRAV</span>.HOWTO<span class="navbar-brand-mini">.OVH</span><br>
-            <span class="navbar-brand-micro">{{ 'THEME_HOWTO_BRAND_MINI'|t|raw }}</span></a>
+            <span class="navbar-brand-micro">{{ 'THEME_HOWTO_BRAND_MICRO'|t|raw }}</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <a class="text-dark" href="#" id="sidebar-toggle" data-sidebar-toggle><i class="fa fa-2x fa-bars"></i></a>
             </button>
             <div class="d-flex justify-content-end" id="navbarCollapse">
-                <button class="badge text-bg-danger" data-bs-toggle="modal" data-bs-target="#disclaimer">
-                    {{ 'THEME_HOWTO_DISCLAIMER'|t }}
-                </button>
-                <span class="badge text-bg-light">{{ 'THEME_HOWTO_VERSION'|t }}</span>
+                <span class="pt-2 badge text-bg-light">{{ 'THEME_HOWTO_VERSION'|t }}</span>
                 {% include 'partials/langswitcher.html.twig' %}
             </div>
         </div>
     </nav>
-    <div class="modal fade" id="disclaimer" tabindex="-1" aria-labelledby="disclaimer" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content bg-danger-subtle">
-                <div class="modal-header">
-                    <h2 class="modal-title bolder" id="disclaimer"><i class="fa fa-exclamation-triangle"></i> Warning!</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Allowing incoming internet traffic to a home network can be risksy!<br><br>
-                    It is highly recommended to have a dedicated ISP router for the web server, or setup a separate network with <a href="https://stevessmarthomeguide.com/vlans-home-networks/" target="_blank">VLAN</a>.
-                </div>
-            </div>
-        </div>
-    </div>
     {% block sidebar %}
     <nav id="sidebar">
         <div id="header-wrapper">

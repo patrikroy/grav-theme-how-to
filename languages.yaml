@@ -1,8 +1,7 @@
 en:
     THEME_LEARN2_GITHUB_EDIT_THIS_PAGE: edit this page
     THEME_LEARN2_GITHUB_NOTE: Found errors? Think you can improve this documentation?
-    THEME_HOWTO_BRAND_MINI: 'speedrun install documentation'
-    THEME_HOWTO_DISCLAIMER: 'Disclaimer'
+    THEME_HOWTO_BRAND_MICRO: 'speedrun install documentation'
     THEME_HOWTO_VERSION: 'Version: 2025-08 (alpha)'
     THEME_HOWTO_CLEAR_HISTORY: Clear Search & History
     THEME_HOWTO_BUILT_WITH_GRAV: Built with <a href="https://getgrav.org" target="_blank">Grav</a>
@@ -42,8 +41,7 @@ en:
 fr:
     THEME_LEARN2_GITHUB_EDIT_THIS_PAGE: modifier cette page
     THEME_LEARN2_GITHUB_NOTE: Vous avez découvert des erreurs ? Vous pensez pouvoir améliorer cette documentation ?
-    THEME_HOWTO_BRAND_MINI: documentation d'installation en speedrun
-    THEME_HOWTO_DISCLAIMER: 'Avertissement'
+    THEME_HOWTO_BRAND_MICRO: documentation d'installation en speedrun
     THEME_HOWTO_VERSION: 'Version : 2025-08 (alpha)'
     THEME_HOWTO_CLEAR_HISTORY: Effacer recherche et historique
     THEME_HOWTO_BUILT_WITH_GRAV: Créé avec <a href="https://getgrav.org" target="_blank">Grav</a>
