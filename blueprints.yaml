@@ -1,0 +1,18 @@
+name: How To
+slug: how-to
+type: theme
+version: 0.1.0
+description: How-To is a bilingual english/french custom theme based on Learn2
+icon: rebel
+author:
+  name: Jean-Michel
+  email: jean-michel@sjm.ovh
+homepage: https://github.com/patrikroy/grav-theme-how-to
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/patrikroy/grav-theme-how-to/issues
+readme: https://github.com/patrikroy/grav-theme-how-to/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
