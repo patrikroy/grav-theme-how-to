@@ -1,10 +1,10 @@
-# "How To" Theme
+# "How-To" Theme
 
 ![](assets/how-to-screenshots.jpg)
 
-**How To** is a theme for [Grav CMS](http://github.com/getgrav/grav). It is based on [Learn2](https://github.com/getgrav/grav-theme-learn2) theme, and is aimed to display online documentations.
+**How-To** is a theme for [Grav CMS](http://github.com/getgrav/grav). It is based on [Learn2](https://github.com/getgrav/grav-theme-learn2) theme, and is aimed to display online documentations.
 
-## Features (from Learn4)
+## Features (from Learn2)
 
 * Lightweight and minimal for optimal performance
 * Fully responsive with off-page mobile navigation
