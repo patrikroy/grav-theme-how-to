@@ -1,0 +1,138 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+{% set github_link_position = github_link_position is defined ? github_link_position : theme_config.github.position %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}" id="base_html_twig">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
+    {% include 'partials/metadata.html.twig' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <link rel="alternate" type="application/atom+xml" href="{{ base_url_absolute}}/feed:atom" title="Atom Feed" />
+    <link rel="alternate" type="application/rss+xml" href="{{ base_url_absolute}}/feed:rss" title="RSS Feed" />
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}">
+    {% include 'partials/langswitcher.hreflang.html.twig' %}
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css-compiled/nucleus.css',102) %}
+        {% do assets.addCss('theme://css-compiled/theme.css',101) %}
+        {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
+        {% do assets.addCss('theme://css/featherlight.min.css',99) %}
+        {% do assets.addCss('theme://css/bootstrap.min.css',98) %}
+        {% do assets.addCss('theme://css/custom.css',97) %}
+
+        {% if browser.getBrowser == 'msie' and browser.getVersion >= 8 and browser.getVersion <= 9 %}
+            {% do assets.addCss('theme://css/nucleus-ie9.css') %}
+            {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css') %}
+            {% do assets.addJs('theme://js/html5shiv-printshiv.min.js') %}
+        {% endif %}
+
+    {% endblock %}
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery',101) %}
+        {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}
+        {% do assets.addJs('theme://js/featherlight.min.js') %}
+        {% do assets.addJs('theme://js/clipboard.min.js') %}
+        {% do assets.addJs('theme://js/jquery.scrollbar.min.js') %}
+        {% do assets.addJs('theme://js/learn.js') %}
+        {% do assets.addJs('theme://js/popper.min.js') %}
+        {% do assets.addJs('theme://js/bootstrap.min.js') %}
+    {% endblock %}
+
+    {% block assets deferred %}
+    {{ assets.css()|raw }}
+    {{ assets.js()|raw }}
+  {% endblock %}
+
+{% endblock head %}
+<script>
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+</head>
+<body class="fs-5 searchbox-hidden {{ page.header.body_classes }}" data-url="{{ page.route }}">
+    <nav class="navbar navbar-expand-md bg-white fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://grav.howto.ovh"><span class="navbar-brand-hl">GRAV</span>.HOWTO<span class="navbar-brand-mini">.OVH</span><br>
+            <span class="navbar-brand-micro">{{ 'THEME_HOWTO_BRAND_MINI'|t|raw }}</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <a class="text-dark" href="#" id="sidebar-toggle" data-sidebar-toggle><i class="fa fa-2x fa-bars"></i></a>
+            </button>
+            <div class="d-flex justify-content-end" id="navbarCollapse">
+                <button class="badge text-bg-danger" data-bs-toggle="modal" data-bs-target="#disclaimer">
+                    {{ 'THEME_HOWTO_DISCLAIMER'|t }}
+                </button>
+                <span class="badge text-bg-light">{{ 'THEME_HOWTO_VERSION'|t }}</span>
+                {% include 'partials/langswitcher.html.twig' %}
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="disclaimer" tabindex="-1" aria-labelledby="disclaimer" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-danger-subtle">
+                <div class="modal-header">
+                    <h2 class="modal-title bolder" id="disclaimer"><i class="fa fa-exclamation-triangle"></i> Warning!</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Allowing incoming internet traffic to a home network can be risksy!<br><br>
+                    It is highly recommended to have a dedicated ISP router for the web server, or setup a separate network with <a href="https://stevessmarthomeguide.com/vlans-home-networks/" target="_blank">VLAN</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block sidebar %}
+    <nav id="sidebar">
+        <div id="header-wrapper">
+
+                {% include 'partials/simplesearch_searchbox.html.twig' %}
+
+        </div>
+        {% include 'partials/sidebar.html.twig' %}
+    </nav>
+    {% endblock %}
+
+    {% block body %}
+    <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+            {% block topbar %}{% if  github_link_position == 'top' or config.plugins.breadcrumbs.enabled %}
+            <div id="top-bar">
+                {% if  github_link_position == 'top' %}
+                <div id="top-github-link">
+                {% include 'partials/github_link.html.twig' %}
+                </div>
+                {% endif %}
+
+                {% if config.plugins.breadcrumbs.enabled %}
+                {% include 'partials/breadcrumbs.html.twig' %}
+                {% endif %}
+            </div>
+            {% endif %}{% endblock %}
+
+            {% block content %}{% endblock %}
+
+            {% block footer %}
+                {% if  github_link_position == 'bottom' %}
+                {% include 'partials/github_note.html.twig' %}
+                {% endif %}
+            {% endblock %}
+
+        </div>
+        {% block navigation %}{% endblock %}
+    </section>
+    {% endblock %}
+
+    {% block analytics %}
+        {% if theme_config.google_analytics_code %}
+        {% include 'partials/analytics.html.twig' %}
+        {% endif %}
+    {% endblock %}
+
+    {% block bottom %}
+        {{ assets.js('bottom')|raw }}
+    {% endblock %}
+ </body>
+</html>
