@@ -12,19 +12,17 @@
 * Built specifically for providing easy to read documentation
 * Fontawesome icon support
 
-# Manual installation
-To install this theme, you have 2 options:
-
-## Option 1
-Download the zip version of this repository and unzip it under `/your-grav-site/user/themes/`. Then, rename the folder to `how-to`. You can find these files on [GitHub](https://github.com/patrikroy/grav-theme-how-to).
-
-## Option 2
-Logged in as the user owning your grav website files, run
-
-    git clone https://github.com/patrikroy/grav-theme-how-to.git /your-grav-site/user/themes/how-to
-
-# Plugins dependencies
-You need to manually install 2 additional plugins to fully enjoy the theme:
+# Plugin dependencies
+You first need to install 2 additional plugins to fully enjoy the theme:
 
 * [LangSwitcher](https://github.com/getgrav/grav-plugin-langswitcher)
 * [SimpleSearch](https://github.com/getgrav/grav-plugin-simplesearch)
+
+# Installation
+In a terminal, log to your server as the user owning your grav website files, and run
+
+    git clone https://github.com/patrikroy/grav-theme-how-to.git /your-grav-site/user/themes/how-to
+
+Then enable the theme in your Grav administration panel.
+
+Enjoy!
