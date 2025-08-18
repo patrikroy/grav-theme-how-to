@@ -13,11 +13,14 @@
 * Fontawesome v4 icons
 * Bootstrap v5.3.7 library
 
-# Plugin dependencies
+## Plugin dependencies
 You first need to install 2 additional plugins to fully enjoy the theme:
 
 * [LangSwitcher](https://github.com/getgrav/grav-plugin-langswitcher)
 * [SimpleSearch](https://github.com/getgrav/grav-plugin-simplesearch)
+
+## Theme dependency
+You also need to install [Learn2](https://github.com/getgrav/grav-theme-learn2) in the theme manager before installation.
 
 # Installation
 In a terminal, log to your server as your grav website files owner, and run
