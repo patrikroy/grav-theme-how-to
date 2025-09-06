@@ -1,0 +1,80 @@
+en:
+    THEME_LEARN2_GITHUB_EDIT_THIS_PAGE: edit this page
+    THEME_LEARN2_GITHUB_NOTE: Found errors? Think you can improve this documentation?
+    THEME_HOWTO_BRAND_MICRO: 'speedrun install documentation'
+    THEME_HOWTO_VERSION: 'Version: 2025-08'
+    THEME_HOWTO_CLEAR_HISTORY: Clear Search & History
+    THEME_HOWTO_BUILT_WITH_GRAV: Built with <a href="https://getgrav.org" target="_blank">Grav</a>
+    THEME_HOWTO_LICENSE: <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">Attribution 4.0 International</a>
+    PLUGIN_SIMPLESEARCH:
+        SEARCH_PLACEHOLDER: 'Search Documentation'
+        SEARCH_RESULTS: 'Search Results'
+        SEARCH_RESULTS_SUMMARY_SINGULAR: 'Query: <strong>%s</strong> found one result'
+        SEARCH_RESULTS_SUMMARY_PLURAL: 'Query: <strong>%s</strong> found %s results'
+        SEARCH_FIELD_MINIMUM_CHARACTERS: 'Please add at least %s characters'
+        SEARCH_CONTENT: 'Search Content'
+        RENDERED_CONTENT:  'Rendered Content (Slower)'
+        RAW_CONTENT: 'Raw Markdown Content (Faster)'
+        BUILTIN_CSS: 'Use built in CSS'
+        BUILTIN_CSS_HELP: 'Include the CSS provided by the simplesearch plugin'
+        BUILTIN_JS: 'Use built in JavaScript'
+        BUILTIN_JS_HELP: 'Include the JavaScript provided by the simplesearch plugin'
+        DISPLAY_SEARCH_BUTTON: 'Display Search Button'
+        DISPLAY_SEARCH_BUTTON_HELP: 'Display a search button near the search field'
+        IGNORE_ACCENDED_CHARACTERS: 'Ignore accented characters'
+        IGNORE_ACCENDED_CHARACTERS_HELP: 'If enabled, search terms will match accented characters regardless to their diacritics i.e. search results will show up for "cafe" and "café" no matter how you typed it.'
+        MIN_QUERY_LENGTH: 'Minimum query length'
+        MIN_QUERY_LENGTH_HELP: 'The minimum number of characters needed before search can be submitted'
+        SEARCH_PAGE_ROUTE: 'Route'
+        SEARCH_PAGE_ROUTE_HELP: 'Default route of the simplesearch plugin'
+        SEARCH_PAGE_TEMPLATE: 'Template'
+        SEARCH_PAGE_TEMPLATE_HELP: 'Name of the template for the search results'
+        CATEGORY_FILTER: 'Category filter'
+        CATEGORY_FILTER_HELP: 'Comma separated list of category names. Enter "@none" to search in all pages.'
+        FILTER_COMBINATOR: 'Filter Combinator'
+        AND_COMBINATOR: 'And - Boolean &&'
+        OR_COMBINATOR: 'Or - Boolean ||'
+        SEARCHABLE_TYPES: "Searchable Types"
+        SEARCHABLE_TYPES_DESCRIPTION: "<b>Title</b> = Search Page Title<br><b>Content</b> = Search Page Content<br><b>Header</b> = Search Raw Page Headers<br><b>Taxonomy</b> = Search Taxonomy"
+        HEADER_KEYS_IGNORED: Header Keys to Ignore
+        HEADER_KEYS_IGNORED_HELP: The root-level header keys that should be skipped when searching type "Header"
+fr:
+    THEME_LEARN2_GITHUB_EDIT_THIS_PAGE: modifier cette page
+    THEME_LEARN2_GITHUB_NOTE: Vous avez découvert des erreurs ? Vous pensez pouvoir améliorer cette documentation ?
+    THEME_HOWTO_BRAND_MICRO: documentation d'installation en speedrun
+    THEME_HOWTO_VERSION: 'Version : 2025-08'
+    THEME_HOWTO_CLEAR_HISTORY: Effacer recherche et historique
+    THEME_HOWTO_BUILT_WITH_GRAV: Créé avec <a href="https://getgrav.org" target="_blank">Grav</a>
+    THEME_HOWTO_LICENSE: <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" target="_blank">Attribution 4.0 International</a>
+    PLUGIN_SIMPLESEARCH:
+        SEARCH_PLACEHOLDER: 'Rechercher'
+        SEARCH_RESULTS: 'Résultats de recherche'
+        SEARCH_RESULTS_SUMMARY_SINGULAR: 'Requête : <strong>%s</strong> a retourné un résultat'
+        SEARCH_RESULTS_SUMMARY_PLURAL: 'Requête : <strong>%s</strong> a retourné %s résultats'
+        SEARCH_FIELD_MINIMUM_CHARACTERS: "Merci d'entrer au moins %s caractères"
+        SEARCH_CONTENT: 'Contenu de la recherche'
+        RENDERED_CONTENT:  'Contenu rendu (Lent)'
+        RAW_CONTENT: 'Contenu Markdown brut (Rapide)'
+        BUILTIN_CSS: 'Use built in CSS'
+        BUILTIN_CSS_HELP: 'Include the CSS provided by the simplesearch plugin'
+        BUILTIN_JS: 'Use built in JavaScript'
+        BUILTIN_JS_HELP: 'Include the JavaScript provided by the simplesearch plugin'
+        DISPLAY_SEARCH_BUTTON: 'Display Search Button'
+        DISPLAY_SEARCH_BUTTON_HELP: 'Display a search button near the search field'
+        IGNORE_ACCENDED_CHARACTERS: 'Ignore accented characters'
+        IGNORE_ACCENDED_CHARACTERS_HELP: 'If enabled, search terms will match accented characters regardless to their diacritics i.e. search results will show up for "cafe" and "café" no matter how you typed it.'
+        MIN_QUERY_LENGTH: 'Minimum query length'
+        MIN_QUERY_LENGTH_HELP: 'The minimum number of characters needed before search can be submitted'
+        SEARCH_PAGE_ROUTE: 'Route'
+        SEARCH_PAGE_ROUTE_HELP: 'Default route of the simplesearch plugin'
+        SEARCH_PAGE_TEMPLATE: 'Template'
+        SEARCH_PAGE_TEMPLATE_HELP: 'Name of the template for the search results'
+        CATEGORY_FILTER: 'Category filter'
+        CATEGORY_FILTER_HELP: 'Comma separated list of category names. Enter "@none" to search in all pages.'
+        FILTER_COMBINATOR: 'Filter Combinator'
+        AND_COMBINATOR: 'And - Boolean &&'
+        OR_COMBINATOR: 'Or - Boolean ||'
+        SEARCHABLE_TYPES: "Searchable Types"
+        SEARCHABLE_TYPES_DESCRIPTION: "<b>Title</b> = Search Page Title<br><b>Content</b> = Search Page Content<br><b>Header</b> = Search Raw Page Headers<br><b>Taxonomy</b> = Search Taxonomy"
+        HEADER_KEYS_IGNORED: Header Keys to Ignore
+        HEADER_KEYS_IGNORED_HELP: The root-level header keys that should be skipped when searching type "Header"

@@ -1,0 +1,17 @@
+name: How-To
+slug: how-to
+type: theme
+version: 1.1.0
+description: How-To is a multilingual custom theme for documentation websites - based on Learn2
+icon: question
+author:
+  name: Jean-Michel
+  email: jean-michel@sjm.ovh
+homepage: https://github.com/patrikroy/grav-theme-how-to
+demo: https://grav.howto.ovh
+keywords: grav, theme, doc, documentation, custom, multilingual, simplesearch
+readme: https://github.com/patrikroy/grav-theme-how-to/blob/main/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
