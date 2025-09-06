@@ -24,7 +24,7 @@ You first need to install 2 additional plugins to fully enjoy the theme:
 You also need to install [Learn2](https://github.com/getgrav/grav-theme-learn2) in the theme manager before installation.
 
 # Installation
-In a terminal, log to your server as your grav website files owner, and run
+In a terminal, and logged as your grav website files owner, run
 
     git clone https://github.com/patrikroy/grav-theme-how-to.git /your-grav-site/user/themes/how-to
 
