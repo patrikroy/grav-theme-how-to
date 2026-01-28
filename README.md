@@ -1,6 +1,6 @@
 # "How-To" Theme
 
-<img src="https://img.howto.ovh/grav-howto-ovh-en-v120.png" alt="How-To Grav theme" width="50%"/>
+<img src="https://pub.cogip.be/grav/grav-howto-ovh-en-v120.png" alt="How-To Grav theme" width="50%"/>
 
 **How-To** is a theme for [Grav CMS](https://github.com/getgrav/grav) suited for online documentations. It is based on **Learn2** theme via [inheritance](https://learn.getgrav.org/17/themes/theme-tutorial#step-2-create-base-theme).
 
